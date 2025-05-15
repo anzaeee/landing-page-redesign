@@ -1,0 +1,41 @@
+/* RGB Animation for OFFER!!! text */
+@keyframes rgbText {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-rgb {
+  background: linear-gradient(to right, #f43f5e, #ec4899, #8b5cf6, #3b82f6, #10b981, #f59e0b);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rgbText 3s linear infinite;
+}
+
+/* Line Animation under heading */
+@keyframes draw {
+  0% {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-draw {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 2s ease-in-out forwards, draw 2s ease-in-out 2s infinite;
+}
+
